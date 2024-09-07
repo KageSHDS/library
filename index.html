@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Books</title>
+	</head>
+	<body class = "body">
+		<header class="header">
+			<div class="container">
+				<div class="text_header">
+					<div><img class = "header_img" onclick="deletedAllBook()" src="images/delete-svgrepo-com.svg" alt=""></div>
+					<blockquote class="quote">
+						<q class="quote_text">Нет более верного друга, чем книга.</q> -
+						<cite>Эрнест Хемингуэй</cite>
+					</blockquote>
+					<img class = "header_img" onclick="uploadPage()" src="images/update-svgrepo-com.svg" alt="">
+				</div>
+			</div>
+		</header>
+		<main class="main">
+			<!-- <section class="list_books" id="list_books">
+				<div class="container"></div>
+			</section> -->
+			<section class="add_book">
+				<div class="container">
+               		<h2 class ="add_title">Добавить книгу</h2>
+					<form class ="add_form" id = "add_form">
+						<input type="text" id = "title" placeholder="title">
+                        <input type="text" id = "author" placeholder="author">
+                        <input type="number" id = "year" placeholder="year">
+                        <input type="text" id = "genre" placeholder="genre">
+                        <select id="status">
+                            <option value="unread">Не прочитано</option>
+                            <option value="read">Прочитано</option>
+                        </select>
+                        <button type = "submit">Сохранить</button>
+					</form>
+					<select class = "filterStatus" id="filterStatus">
+						<option value="All">Всё</option>
+						<option value="unread">Не прочитано</option>
+						<option value="read">Прочитано</option>
+					</select>
+					<button class ="filter_button" onclick="displayBook()">Применить</button>
+					<div class ="ramka"></div>
+				</div>
+
+			</section>
+			<section class="list_books" id="list_books">
+				<div class="container"></div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<div class="text_header">
+					<blockquote class="quote">
+						<q class="quote_text">Нет более верного друга, чем книга.</q> -
+						<cite>Эрнест Хемингуэй</cite>
+					</blockquote>
+					<p class ="footer_number" id = "footer_number"> </p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="js/books.js">
+		</script>
+	</body>
+</html>

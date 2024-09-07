@@ -1,0 +1,140 @@
+body{
+    line-height: 11px;
+    font-size: 20px;
+    font-weight: 400;
+    color: red;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+}
+html,
+.body{
+    height: 100%;
+}
+
+.main{
+    flex: 1 0 auto;
+}
+
+/* ----------header------- */
+.header {
+    background-color: rgb(33, 31, 31);
+    margin-bottom: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header_img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.text_header {
+    display: flex;
+    justify-content: space-between;
+}
+.header_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.header_img{
+    order: 1;
+}
+/* .header_bth{
+    display: block;
+    width: 50px;
+    height: 50px;
+    
+    order: 1;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 50;
+    color:aliceblue
+} */
+
+/* -------------------------------- */
+/* 
+---------------list_book-------- */
+.list_books{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.book{
+    background-color: #6588a8;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+
+/* --------------------------------- */
+
+
+/* ---------add_book------------- */
+
+.add_book{
+    background-color: #6588a8;
+    padding: 5px;
+}
+
+.add_form{
+   
+}
+.add_label{
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}    
+.add_input{
+   
+}
+.add_text{
+    margin: 5px;
+}
+#label{
+ 
+}
+.add_button{
+    margin-left: 116px;
+}
+/* .add_title{
+    margin: 10px;
+    padding: 10px;
+} */
+/* -------------------------------- */
+
+.footer{
+    background-color: black;
+}
+
+form {
+    max-width: 300px;
+}
+
+.ramka{
+  height: 200px;
+  width:200px;
+  background: #eee;
+  border-radius: 20px;
+  border: 2px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
