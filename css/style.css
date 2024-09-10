@@ -2,7 +2,7 @@ body{
     line-height: 11px;
     font-size: 20px;
     font-weight: 400;
-    color: red;
+    color: rgb(182, 140, 140);
 }
 .body{
     display: flex;
@@ -15,12 +15,12 @@ html,
 
 .main{
     flex: 1 0 auto;
+    background-color: rgb(56, 55, 55);
 }
 
 /* ----------header------- */
 .header {
     background-color: rgb(33, 31, 31);
-    margin-bottom: 20px;
 }
 
 .container{
@@ -49,18 +49,6 @@ html,
 .header_img{
     order: 1;
 }
-/* .header_bth{
-    display: block;
-    width: 50px;
-    height: 50px;
-    
-    order: 1;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 50;
-    color:aliceblue
-} */
 
 /* -------------------------------- */
 /* 
@@ -89,12 +77,13 @@ html,
 /* ---------add_book------------- */
 
 .add_book{
-    background-color: #6588a8;
+    background-color: rgb(56, 55, 55);
     padding: 5px;
 }
 
 .add_form{
-   
+display: flex;
+   flex: 50%
 }
 .add_label{
     display: inline-block;
@@ -102,39 +91,78 @@ html,
     text-align: right;
     padding-right: 10px;
 }    
-.add_input{
-   
-}
+
 .add_text{
     margin: 5px;
 }
-#label{
- 
-}
+
 .add_button{
     margin-left: 116px;
 }
-/* .add_title{
-    margin: 10px;
+.add_title{
+    color:#ebca12
+}
+
+li::marker {
+    color: rgb(56, 55, 55);
+}
+
+.bookItem{
     padding: 10px;
-} */
+    font-size: 20px;
+    line-height: 23px;
+    border-radius: 20px;
+    border: 3px inset #ebca12;
+    color: #ebca12;
+    height: 200px;
+    background: #252525;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_aev{
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 1000px;
+    color: #ebca12;
+}
+
+.add_form_item{
+    max-width: 300px;
+    margin-left: 0px;
+}
+
+.save{
+    margin-right: 1;
+}
+
+button, .form_input{
+    color: #ebca12;
+    background-color: #252525;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all .5s;
+}
+button:hover{
+    color:#ebca12;
+    background-color: #FEFEFE;
+    border: 1px solid #ebca12;
+}
+
 /* -------------------------------- */
+
+
+/* -----------footer------------ */
+
+
 
 .footer{
     background-color: black;
 }
 
-form {
-    max-width: 300px;
-}
 
-.ramka{
-  height: 200px;
-  width:200px;
-  background: #eee;
-  border-radius: 20px;
-  border: 2px dashed #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+/* -------------------------------- */
+
